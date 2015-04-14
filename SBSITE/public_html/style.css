@@ -1,0 +1,20 @@
+ 
+/* 
+    Created on : 14 Apr, 2015, 12:21:03 AM
+    Author     : akshynathr
+*/
+.container-fluid{padding: 0px !important;}
+#sidebar{background-color: #D1C8AB;padding:10px; padding-right: 30px; height:100% ; top:0; position: fixed; left: -190px; z-index: 300;width: 210px;}
+
+#sidebar h4{ text-align: center; }
+
+#sidebar a{ text-decoration: none; color: #fff;}
+
+#sidebar a:hover{ color: #323;}
+
+#workspace{background-color: #EAEAEA;height: 800px ;}
+
+#nav{ display: inline-block; padding: 2px; color: #fff; margin-top: 50px;font-size: 160%; text-align: right; float: right; list-style: none; }
+
+
+#logo{margin-left:35px;}
