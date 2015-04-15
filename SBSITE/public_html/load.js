@@ -14,6 +14,11 @@ function load()
 
 $( document ).ready(load);
 
+$(window).load(function() {
+		// Animate loader off screen
+		$("#preloader").fadeOut("slow");;
+	});
+
 $(document).ready(function()
 {
     $('#sidebar').on('click',function(event){
@@ -29,12 +34,14 @@ $(document).ready(function()
         
         if(sidebar.hasClass('open'))
         {sidebar.animate({left:"0px"}); }
-         //else
-        // { sidebar.animate({left:-sidebarwidth},250);  }
+          else
+          { sidebar.animate({left:-sidebarwidth},250);  }
         
         
-         $('#page2').on('click',function(){$('#workspace').load('pages/page2.html');});
+         $('#page2').on('click',function(){ $('#preloader').show(); $('#workspace').load('pages/page2.html #page2');$('#preloader').fadeOut('slow');});
        
+       
+       $('load1').on('click',function(){});
     });
     
 }
@@ -48,5 +55,8 @@ function close(){ var s=$('#sidebar');        var sidebarwidth=$('#sidebar').wid
  
  
 
- 
- 
+$(function(){
+    $('#la').slimScroll({
+        height: '650px'
+    });
+});
