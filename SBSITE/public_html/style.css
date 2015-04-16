@@ -1,16 +1,21 @@
- body{overflow: hidden;}
+ body{overflow: hidden; background-color: #000;}
 /* 
     Created on : 14 Apr, 2015, 12:21:03 AM
     Author     : akshynathr
 */
 .container-fluid{padding: 0px !important;}
-#sidebar{background-color: #D1C8AB;padding:10px; padding-right: 30px; height:100% ; top:0; position: fixed; left: -190px; z-index: 300;width: 210px;}
+#sidebar{background-color: #121212;padding:10px;padding-top:40px; padding-right: 0px; height:100% ; top:0; position: fixed; left: -185px; z-index: 300;width: 210px;}
 
-#sidebar h4{ text-align: center; }
+#sidebar h4{ text-align: center;color: #fff; padding-right: 5px; font-family: 'Open Sans', sans-serif; font-size: 14px; padding: 6px;}
 
-#sidebar a{ text-decoration: none; color: #fff;}
+#sidebar a{ transition: color 0.5s ease;text-decoration: none; color: #D7DEDE;}
 
-#sidebar a:hover{ color: #323;}
+#sidebar a:hover{   color: #fff  ; }
+
+#sidebar li{width:150px;  font-family: 'Playfair Display', serif;  padding-bottom: 2px; margin-right: 8px;padding-right: 40px;-webkit-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out; font-size: 20px;}
+
+#sidebar li:hover{background-image: url(images/arrow.png); background-repeat: no-repeat;}
 
 #preloader {
 	position: fixed;
@@ -21,30 +26,40 @@
 	z-index: 250;
 	background: url(images/loader.GIF) center no-repeat #fff;}
 
-#navbar {height: 30px; background-color: #c0c0c0;margin-top: 0px;  text-align: center;z-index: 250;}
+#navbar {  font-size: 0;background-color: #D4D8D7;opacity: .6; height: 40px; -webkit-transition: all .8s ease;transition:all .8s ease; background-image: url(images/stripes.png);;margin-top: 0px;  text-align: center;z-index: 350;}
+
+
+#navbar ul{  }
+#navbar ul li{ display:inline-block; padding: 10px; text-align: center;  width: 160px; height: 41px; background-color: #FBF9F9;  border-left: solid #CCCCCC 1px;}
+
+#nav1{ border-top:7px solid #536351;}
+#nav2{ border-top:7px solid #764851;}
+#nav3{ border-top:7px solid #426784;}
+#nav4{ border-top:7px solid #C7AF98;}
+
+#navbar a{ font-size: 16px;text-decoration: none; color: #000; }
 
  
-#navbar ul li{ display:inline-block; padding:5px; width: 100px; border: 1px solid blanchedalmond; }
 
-#navbar a{ text-decoration: none; color: #fff;}
 
-#workspace{background-color: #EAEAEA;height: 100% ;margin-left: 25px;padding: 0px;overflow-y: scroll;}
+#workspace{background-color: #EAEAEA;height: 100% ;margin-left: 10px;padding: 0px;overflow-y: scroll;overflow-x: hidden;}
 
 #nav{ display: inline-block; padding: 2px; color: #fff; margin-top: 50px;font-size: 160%; text-align: right; float: right; list-style: none; }
 
 
-#logo{margin-left:35px;}
+#logo{margin-left:10px;}
 
 
 #outer{    width:200px;overflow: hidden;}
 
-#inner{ height: 900px; overflow-y:scroll; overflow-x:hidden; background-color: blue; margin-right: -16px;}
+#inner{  min-height: 100%; height:100%; overflow-y:scroll; overflow-x:hidden; background-color: blue; margin-right: -16px;}
 
 
 #list{ overflow-x:hidden; overflow-y:scroll; height: 800px;width:200px;}
 
 #la{ background-color: red;}
 
+#space{ height: 110px;}
 
 //Hide scrollbars
 
