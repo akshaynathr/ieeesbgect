@@ -5,6 +5,9 @@ written by :akshaynathr
 screen_width=screen.width;
 screen_height=window.height;
 
+ 
+
+
 function load()
 {
    $('#workspace').css('height',screen_height+'px');
@@ -58,10 +61,10 @@ $(document).ready(function()
   $('#workspace').height($(window).height()-40);
     $('#sidebar').on('click',function(event){
         
-        event.preventDefault();
+        
     
         var sidebar=$('#sidebar');
-        var sidebarwidth=$('#sidebar').width();
+        var sidebarwidth=$('#sidebar').width()-15;
         
         //toggle class
         sidebar.toggleClass('open');
@@ -72,10 +75,17 @@ $(document).ready(function()
           else
           { sidebar.animate({left:-sidebarwidth},250);  }
         
+        //main menu loaders
+         $('#home_nav').on('click',function(){ $('#preloader').show(); $('#workspace').load('pages/page2.html #home');$('#preloader').fadeOut('slow');});
         
-         $('#page2').on('click',function(){ $('#preloader').show(); $('#workspace').load('pages/page2.html #page2');$('#preloader').fadeOut('slow');});
+        
+        
+        //bottom menu loaders 
+        $('#nav2').on('click',function(){ $('#preloader').show(); $('#workspace').load('pages/ras.html #ras');$('#preloader').fadeOut('slow');});
+        $('#nav1').on('click',function(){  $('#preloader').show(); $('#workspace').load('pages/page2.html #home');$('#preloader').fadeOut('slow');});
        
-       
+        $('#nav3').on('click',function(){  $('#preloader').show(); $('#workspace').load('pages/KITES.html #kites');$('#preloader').fadeOut('slow');});
+      
        $('load1').on('click',function(){});
     });
     
