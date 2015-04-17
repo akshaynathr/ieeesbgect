@@ -13,6 +13,10 @@ and open the template in the editor.
         <script src="js/libs/jquery/jquery.js"></script>
         <script src="load.js"></script>
         <link rel="stylesheet" href="style.css">
+        <!-- fonts-->
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+       <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        
         <!-- Latest compiled and minified CSS -->
 
         
@@ -25,6 +29,8 @@ and open the template in the editor.
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="jquery.slimscroll.min.js"></script>
+<!--scrolling -->
+<script src="mousewheel.js"></script>
 
 
      </head>
@@ -35,12 +41,18 @@ and open the template in the editor.
         <div class="container-fluid">
             
             <div id="sidebar" class="col-md-2"  >
-                <img id="logo" src="images/logo.gif" height=93 width=130 />   
-                <br/> <img id="logo" src="images/words.gif" height=40 width="100" align="middle"/><br/>
+                <!--<img id="logo" src="images/logo.gif" height=93 width=130 />  --> 
+                  <img id="logo" src="images/ieeewhite.png" height=80 width="150" align="middle"/><br/>
                 
-                <h4>STUDENT BRANCH GEC THRISSUR</h4>
-                           
-                
+                  <h4>Student Branch <br> Government Engineering College Thrissur</h4>
+                  
+                  <ul id="icons"> 
+                      <li><img title="Events Calendar" src="images/calendar.png" height=40 width=40 /></li>
+                      <li> <img title="Join IEEE" src="images/join.png" height=38 width=38 /></li>
+                  
+                  </ul>
+                  <div id="space"></div>
+                  
                 <ul id="nav">
                     <li id="page2"><a  href="#"> home</a></li>
                     <li><a href="#"> gallery</a></li>
@@ -55,22 +67,22 @@ and open the template in the editor.
                 </ul>
                 
             </div>  
-            <div id="navbar" class="col-md-12" >
-                <ul>
-                    <li><a id="load1" href="images/kites.jpg">WIE</a> </li>
-                    <li><a id="load2" href="#">RAS </a></li>
-                    <li><a id="load3" href="#">WIE </a></li>
-                    <li><a id="load4" href="#">RAS </a></li>
-                    
-                </ul>
-                
-            </div>
             
-            <div id="workspace" class="col-md-12"  >
+            
+            <div id="workspace" class="col-md-8"  >
              
                
             </div>
         
+            <div id="rightbar" class="col-md-3"><!-- start feedwind code -->
+                <br/>
+                <script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://feeds.feedburner.com/IeeeSpectrum",rssmikle_frame_width: "300",rssmikle_frame_height: "400",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "on",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "Off",rssmikle_title: "on",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0F0D0E",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#121212",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#66665F",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:300px;"></div><a href=""#"></a><!-- end feedwind code -->
+                
+                
+                
+               
+                  </div>
+            
             
         
             
@@ -78,7 +90,21 @@ and open the template in the editor.
             
             
             
-            <footer> </footer>
+            <footer> 
+            
+            <div id="navbar" class="col-md-12" >
+                <ul>
+                    <li id="nav1"><a id="load1" href="images/kites.jpg">WIE</a> </li>
+                    <li id="nav2"><a id="load2" href="#">RAS </a></li>
+                    <li id="nav3"><a id="load3" href="#">WIE </a></li>
+                    <li id="nav4"><a id="load4" href="#">RAS </a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            
+            </footer>
         </div>
         </div>
     </body>
