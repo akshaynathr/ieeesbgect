@@ -212,26 +212,28 @@ h2.ss-subtitle:after{
 	color: rgba(255,255,255,1);
 }
 .ss-circle-1{
-    background-image:url(../images/1.jpg);
+    background-image:url(../timelineimages/paper.png);
 }
 .ss-circle-2{
-    background-image: url(../images/2.jpg);
+    background-image: url(../timelineimages/sense14-feb.jpg);
 }
 .ss-circle-3{
-    background-image: url(../images/3.jpg);
+    background-image: url(../timelineimages/pcb10_feb.jpg);
 }
 .ss-circle-4{
-    background-image: url(../images/4.jpg);
+    background-image: url(../timelineimages/security7_feb.jpg);
 }
 .ss-circle-5{
-    background-image: url(../images/5.jpg);
+    background-image: url(../timelineimages/wie25july.jpg);
 }
 .ss-circle-6{
-    background-image: url(../images/6.jpg);
+    background-image: url(../timelineimages/image-kites6july.jpg);
 }
 .ss-circle-7{
-    background-image: url(../images/7.jpg);
+    background-image: url(../images/6.jpg);
 }
+ 
+
 .ss-circle-8{
     background-image: url(../images/8.jpg);
 }
