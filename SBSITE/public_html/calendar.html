@@ -10,8 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-       <!-- <script src="js/libs/jquery/jquery.js"></script-->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/libs/jquery/jquery.js"></script>
         <script src="load.js"></script>
         <link rel="stylesheet" href="style.css">
         <!-- fonts-->
@@ -19,8 +18,7 @@ and open the template in the editor.
        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         
         <!-- Latest compiled and minified CSS -->
-        <script type="text/javascript" src="js/modernizr.custom.11333.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -35,7 +33,7 @@ and open the template in the editor.
 <script src="mousewheel.js"></script>
 <script >
     
-    $(document).ready(function(){$('#preloader').show(); $('#workspace').load('timeline.html');$('#preloader').fadeOut('slow');
+    $(document).ready(function(){$('#preloader').show();$('#cont').ready( $('#preloader').fadeOut('slow'););
     
      $('#sidebar').toggleClass('open');
 
@@ -45,11 +43,11 @@ $('#sidebar').animate({left:"0px"},1000);
  <link rel="shortcut icon" href="images/ieee_favicon.ico" type="image/x-icon"/>
        
      </head>
-    <body>
+    <body style="background-color:#E8EEF7;">
         <div id="preloader"> </div>
         <div class="rows">
         
-        <div class="container-fluid">
+        <div class="container-fluid" style="background-color:#E8EEF7;">
             
             <div id="sidebar" class="col-md-2"  >
                 <!--<img id="logo" src="images/logo.gif" height=93 width=130 />  --> 
@@ -58,7 +56,7 @@ $('#sidebar').animate({left:"0px"},1000);
                   <h4>Student Branch <br> Government Engineering College Thrissur</h4>
                   
                   <ul id="icons"> 
-                        <li><a href="calendar.html"><img title="Events Calendar" src="images/calendar.png" height=40 width=40 /></a></li>
+                      <li><img title="Events Calendar" src="images/calendar.png" height=40 width=40 /></li>
                       <li> <a href="http://www.ieee.org/membership_services/membership/join/index.html" ><img title="Join IEEE" src="images/join.png" height=38 width=38 /></a></li>
                   
                   </ul>
@@ -70,9 +68,9 @@ $('#sidebar').animate({left:"0px"},1000);
                      <li><a href="#"> awards</a></li>
                     
                      <li id="about_us"><a href="#"> about us</a></li>
-                    <li><a href="events"> sb events</a></li>
+                    <li><a href="events.html"> sb events</a></li>
                    
-                    <li><a href="contactus.html"> contact us</a></li>
+                    <li><a href="#"> contact us</a></li>
                     
                  
                 </ul>
@@ -80,10 +78,9 @@ $('#sidebar').animate({left:"0px"},1000);
             </div>  
             
             
-            <div id="workspace" class="col-md-12"  >
+            <div id="workspace" class="col-md-12"style="margin-left: 200px; background-color:#E8EEF7;"  >
              
-               
-            </div>
+               <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=nq8fgpauf9nsmbv100lsldklt0%40group.calendar.google.com&amp;color=%23711616&amp;ctz=Asia%2FCalcutta" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>  </div>
         
              
             

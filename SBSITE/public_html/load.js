@@ -10,7 +10,7 @@ screen_height=window.height;
 
 function load()
 {
-   $('#workspace').css('height',screen_height+'px');
+   $(window).trigger('resize');
  
    
 }
@@ -24,25 +24,28 @@ $( document ).ready(load);
 //});
 
 //resizes on load
-$(document).ready(function(){ 
-    $('#workspace').height($(window).height()-40);
-
-  $('#rightbar').height($(window).height()-40);  
+$(document).load(function(){ 
+    $(window).trigger('resize');
 });
 
 //resizes on window change
 $(window).resize(function(){ var w=$(window).height();
     
-  $('#workspace').height($(window).height()-40);
+  $('#workspace').height($(window).height()-65);
 
-  $('#rightbar').height($(window).height()-40);  
+  $('#sidebar').height($(window).height()-65);
+   $('#rightbar').height($(window).height()-65);
 
 });
 
-
+$(document).ready(function(){  var w=$(window).height();
+    
+    $('#workspace').height($(window).height()-65);});
+    
 $(window).load(function() {
 		// Animate loader off screen
-		$("#preloader").fadeOut("slow");;
+		$("#preloader").fadeOut("slow");
+               
 	});
 
 $(document).ready(function()
@@ -58,8 +61,8 @@ $(document).ready(function()
             //adjusting workspace size
     var w=$(window).height();
     
-  $('#workspace').height($(window).height()-40);
-    $('#sidebar').on('click',function(event){
+    $('#workspace').height($(window).height()-65);
+    $('#sidebar').on('click',function(){
         
         
     
@@ -77,7 +80,7 @@ $(document).ready(function()
         
         //main menu loaders
          $('#home_nav').on('click',function(){ $('#preloader').show(); $('#workspace').load('pages/page2.html #home');$('#preloader').fadeOut('slow');});
-        $('#events').on('click',function(){ $('#preloader').show(); $('#workspace').load('timeline.html');$('#preloader').fadeOut('slow');});
+        $('#events').on('click',function(){ $('#preloader').show(); $('#workspace').load('timeline.html #container');$('#preloader').fadeOut('slow');});
         
         
         
