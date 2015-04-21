@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Apr, 2015, 10:56:43 PM
+    Author     : achu
+*/
+body{ overflow-y: hidden;}
+#events{ height: 100%; width: 2000px; padding: 0px; margin: 0px;overflow-y: hidden;}
+
+#eve_list{ height: 900px; width: 2000px; font-size: 0; overflow-y: hidden;}
+
+#eve_list li{ overflow-x: hidden; overflow-y: scroll;height: 100%;text-decoration: none; background-color:red;  font-size: 20px; display: inline-block; border: 1px solid black;
+}
+.eve{width: 350px; height: 100%;  }
+
+.inside{ height: 1000px;}
+
+::-webkit-scrollbar {
+   display: none;
+    }          

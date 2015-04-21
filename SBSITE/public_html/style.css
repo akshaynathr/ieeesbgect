@@ -35,7 +35,7 @@ body{overflow: hidden; background-color: #000;}
     Author     : akshynathr
 */
 .container-fluid{padding: 0px !important;background-color: #121212;}
-#sidebar{background-color: #121212;padding:10px;padding-top:18px; padding-right: 0px; height:100% ; top:0; position: fixed; left: -185px; z-index: 300;width: 210px;}
+#sidebar{background-color: #121212;  padding:10px;padding-top:18px; padding-right: 0px; height:100% ; top:0; position: fixed; left: -185px; z-index: 300;width: 210px;}
 
 #sidebar h4{ text-align: center;color: #fff; padding-right: 5px; font-family: 'Open Sans', sans-serif; font-size: 14px; padding: 6px;}
 
